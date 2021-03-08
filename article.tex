@@ -13,14 +13,14 @@
 \usepackage{eurosym}
 \usepackage{graphicx}
 
-\title{Cybersecurity impacts at the beginning\\ of Covid-19 pandemic in Italy}
+\title{Cybersecurity Impacts of the Covid-19 Pandemic in Italy}
 
 \author{
-Marco R. A. Bozzetti\inst{1,2,3}
-\and
-    Fausto Spoto\inst{4}
-\and
-   Luca Olivieri \inst{4}
+  Marco R.A.\ Bozzetti\inst{1,2,3}
+  \and
+  Luca Olivieri\inst{4}
+  \and
+  Fausto Spoto\inst{4}
 }
 
 % Institutes for affiliations are also joined by \and,
@@ -29,13 +29,13 @@ Marco R. A. Bozzetti\inst{1,2,3}
 \and
   Italian Information System Security Association International (ISSA)
 \and
-	Digital Attacks Observatory (OAD) Team, Italy
+  Digital Attacks Observatory (OAD) Team, Italy
 \and
    University of Verona, Verona, Italy\\
-   \email{\{fausto.spoto,luca.olivieri\}@univr.it}\\
+   \email{\{luca.olivieri,fausto.spoto\}@univr.it}\\
  }
 
-\authorrunning{M. Bozzetti, F.Spoto, L. Olivieri}
+\authorrunning{M.\ Bozzetti, L.\ Olivieri, F.\ Spoto}
 
 \titlerunning{Cybersecurity impacts at the beginning of Covid-19 pandemic in Italy}
 
@@ -44,51 +44,82 @@ Marco R. A. Bozzetti\inst{1,2,3}
 \maketitle
 
 \begin{abstract}
-%TODO
+  The Covid-19 pandemic has pushed companies to the extensive
+  use of digital services, to implement home working and provide
+  online services to people in lockdown. As a consequence, it is interesting
+  to study how this has affected the number, kind and distribution of cybersecurity
+  attacks. This paper gives an empirical evaluation of the cybersecurity attacks
+  at the beginning of the Covid-19 pandemic in Italy, based on data collected from
+  the questionnaires of the annual Digital Attacks Observatory. It shows that the overall
+  number of attacks has not increased, but attacks have affected smaller companies
+  than before. This can be explained with the fact that the Italian
+  industrial scenario is mostly populated by small and medium enterprises,
+  that have been obliged to a quick reconvertion of their IT systems and typically
+  lack the necessary cybersecurity culture.
 
-  %\keywords{Covid-19 impacts \and Cyberattacks \and Small Medium Enterprises \and Cybersecurity Culture.}
+  \mbox{}\\
+  \textbf{Keywords:} cyberattack, cybersecurity, Covid-19, SME.
 \end{abstract}
 
 \section{Introduction}
 
-The advent of Covid-19 pandemic and the consequent lock-downs have led companies to face needs such as smart working, remotely work and digital business,
-accelerating their digitalization efforts. As reported in \cite{Goasduff20} by Gartner, a world's leading research and advisory company, before the pandemic crisis
-most organizations moved their digital strategies forward at a steady pace, but during the Covid-19 pandemic there has been a significant increase in the 
-development of digital products and services to maintain and accelerate customer engagement. However, the digitalization race has led to many cybersecurity 
-issues and the intensification of malicious cyber attacks around the world~\cite{HKICS20,PA21}. In this scenario, Italy is an interesting case of study because 
-it is composed mostly from Small Medium Enterprises (SMEs) of different sectors and therefore can highlight specific aspects instead of the various global views 
-in which large companies have a greater influence. This paper presents a window of italian panorama to understand how the cyber-security is faced up during COVID-19 pandemic. 
-Section~\ref{sec:DigitalAttacksObservatory} presents \textit{Digital Attacks Observatory}, a survey where we have collected relevant information about cybersecurity and 
-italian organizations which will be used in subsequent sections as a reference to better understand Covid-19 impacts. A detailed discussions of collected data and trends are in 
-Sections~\ref{sec:DataDiscussion}, \ref{sec:TypeAttacks}. Finally, Section~\ref{sec:Conclusion} concludes by underlying the importance of cybersecurity culture focusing 
-on Italian reality.
-
+The Covid-19 pandemic and consequent lockdowns have obliged
+companies to face new challenges such as smart working, remote work and digitalization,
+accelerating all previous efforts in that direction.
+As reported by Gartner~\cite{Goasduff20}, most organizations were already moving
+their digital agenda forward at a steady pace, but the Covid-19 pandemic required
+a significant leap in the 
+development of digital products and services, with the goal of
+maintaining and fostering customer engagement.
+However, digitalization has generated many cybersecurity 
+issues and the intensification of cyberattacks all around the world~\cite{HKICS20,PA21}.
+In this scenario, Italy is an interesting case study since it is home
+of mostly small to medium enterprises (SMEs), active in different sectors,
+and can consequently highlight cybersecurity aspects that are different from those
+faced by larger companies of greater influence. This paper presents the status of the
+Italian scenario, to understand how cyberattacks and cybersecurity have fared
+during the ongoing COVID-19 pandemic.
+Section~\ref{sec:DigitalAttacksObservatory} presents the \textit{Digital Attacks Observatory},
+a survey that we have used to collect relevant information about cybersecurity and 
+Italian organizations.
+Sections~\ref{sec:DataDiscussion} and~\ref{sec:TypeAttacks} report
+a detailed discussion of the collected data and observed trends.
+Finally, Section~\ref{sec:Conclusion} concludes by underlying the importance of
+a cybersecurity culture focused on the Italian reality.
 
 \section{Digital Attacks Observatory}\label{sec:DigitalAttacksObservatory}
 
 The \textit{Digital Attacks Observatory} (OAD)~\cite{oadweb} is the only independent online survey in Italy about intentional digital attacks on IT systems of companies and public
-bodies operating and in addition drawn up with the precious collaboration of the Italian Postal and Telecommunications Police. The OAD survey does not provide 
-for a predefined set of respondents, but it allows potential interested parties full and free access to an online questionnaire, in a totally anonymous manner. 
-Thanks to the number of responses collected and their balanced distribution between companies and public bodies of various sizes and belonging to various product 
-sectors, we can provide a specific picture of the cyber attacks in Italy.  The last OAD 2020  reaches the twelfth year of consecutive surveys on cyberattacks in Italy.
+bodies. It is implemented in collaboration with the Italian postal and telecommunications police.
+The last OAD 2020 was the twelfth year of consecutive surveys on cyberattacks in Italy.
+The OAD survey is not directed at a predefined set of respondents, but allows potential interested
+parties to have full and free access to an online questionnaire, in a totally anonymous way. 
+Thanks to the number of responses collected and their balanced distribution between companies and public bodies of different size and belonging to different economic
+sectors, we can provide a specific picture of the cyberattacks in Italy.
 
-\subsection{Questionaries}
+\subsection{The Questionnaires}
 
-The OAD questionaries refer for about half of the question to cyber attacks typologies and they main characteristics, if they have been relived. 
-The other half of the questions refers to the technical and organizational security measures implemented on the IT systems of the respondents. 
-OAD therefore allows to contextualize the cyber attacks with the cyber measures in production in each IT system considered. 
-In fact, OAD provided a macro qualitative evaluation of the implemented measures (within the specific context of the company), in order to improve the motivation to 
-complete the questionaries to all the potential anonymous respondents. 
-In particular the security measures considered in the 2020 questionnaire are subdivided in technical, organizational, management and governance ones as follow:
+About half of the OAD questionnaires refer to the occurred
+cyberattack typologies and their main characteristics.
+The other half refers to the technical and organizational security measures implemented
+on the IT systems of the respondents. 
+Therefeore, OAD allows one to match the cyberattacks to the cyber-measures in each production
+IT system considered. 
+In fact, OAD provides a qualitative macro-evaluation of the implemented measures
+(within the specific context of the company), in order to motivate the anonymous respondents
+to complete the questionnaires.
+In particular, the security measures considered in the 2020 questionnaire were subdivided
+in \emph{technical}, \emph{organizational}, \emph{managerial} and \emph{governamental}, as follow:
+
 \begin{enumerate}
 \small
 	\item \emph{Technical measures}
 	\begin{itemize}
-		\item Overall architecture of digital security measures, integrated with the entire IT system architecture
+		\item Overall architecture of the digital security measures, integrated with the entire IT system architecture
 		\item Physical countermeasures
 		\item Identification, Authentication, and Authorization (IAA) measures
-		\item Cybersecurity measures at local network and geographic level
-		\item Measures for logical protection of each single Information and Communications Technology (ICT) system
+		\item Cybersecurity measures at local and geographical network level
+		\item Measures for logical protection of each single Information and Communication Technology (ICT) system
 		\item Application and software protection
 		\item Data protection
 	\end{itemize}
@@ -100,90 +131,131 @@ In particular the security measures considered in the 2020 questionnaire are sub
 		\item Awareness and culture of digital security at all levels
 		\item Auditing
 	\end{itemize}
-	\item \emph{Management and governance measures}
+	\item \emph{Managerial and governamental measures}
 	\begin{itemize}
 		\item Digital security control, monitoring and management systems
-		\item Disaster Recovery (DR) plan
+		\item Disaster Recovery (DR) plan.
 	\end{itemize}
 \end{enumerate}
 
-\subsection{Overview 2019-(1Q)2020}
+\subsection{Overview from 2019 to 1Q-2020}
 
-OAD 2020 survey\footnote{The report is written in Italian, only the Executive Summary is in English: 186 A4 pages, 148 images and graphics, 11 Chapters
-(147 A4 pages) and 9 Attachments (39 A4 pages)}~\cite{oad20} took place during the Covid-19 pandemic, and it covered the entire 2019 and the first quarter 
-of 2020, when in Italy the pandemic exploded. The data comparison of 2019 and the first quarter 2020, provided by the same respondents pool, has a statistical relevance and provides a 
-clear indication of the Covid-19 pandemic on the intentional cyber attacks in Italy. This pandemic has been the trigger for a wide range of cyber attacks, mainly 
-caused by the sudden - and in part unprepared - passage of many to agile working from home and to a strong use of every type of IT service on Internet, mainly
-derived by the mobility lockdowns imposed by the Italian Authorities. The emerged respondents’ pool covers all the product sectors, including Public Administrations,
-even if the majority of the respondents’ companies belong to the ICT sector (30.8\%). The 2020 pool is well balanced for the size of the organizations, in terms
-of employees, between those below 250 and the largest ones. It must be taken into account, as reported by ISTAT~\cite{istat21}, that in Italy 99.91\%
-of enterprises are SMEs, under 250 employees, and 95\% are under ten employees. The OAD 2020 survey is therefore able to consider small and 
-tiny organizations, which are thee vast majority in Italy, and which are not normally considered in other cybersecurity surveys: 57.5\% of the OAD 2020 respondents
-belong to structures with less than 250 employees, and of these 22.1\% under 10. 
+The OAD 2020 survey
+\footnote{The report is written in Italian,
+  only the Executive Summary is in English: 186 A4 pages, 148 images and graphics, 11 Chapters
+  (147 A4 pages) and 9 Attachments (39 A4 pages).}~\cite{oad20}
+took place during the
+Covid-19 pandemic and covered the entire 2019 and the first quarter 
+of 2020, when the pandemic exploded in Italy. The comparison of data from 2019 to that
+from the first quarter of 2020, provided by the same set of respondents,
+has statistical relevance and provides a 
+clear indication of the Covid-19 pandemic on the intentional cyberattacks in Italy.
+This pandemic has triggered a wide range of cyberattacks, mainly 
+caused by the sudden, and partly unexpected, passage to working from home
+and to a strong use of every type of IT service on the Internet, as a consequence
+of the mobility lockdowns imposed by the Italian authorities. The resulting respondents pool
+covers all the production sectors, including public administration,
+even if the majority of the respondents companies belong to the ICT sector (30.8\%).
+The 2020 pool is well balanced for the size of the organizations, in terms
+of employees, between those below 250 and the largest ones. It must be taken into account,
+as reported by ISTAT~\cite{istat21}, that 99.91\%
+of enterprises in Italy are SMEs, with up to 250 employees, and 95\% have fewer than ten employees.
+The OAD 2020 survey is therefore able to consider small and 
+tiny organizations, that are the vast majority in Italy, and that usually
+are not considered in other cybersecurity surveys: 57.5\% of the OAD 2020 respondents
+belong to structures with less than 250 employees and, of these, 22.1\% have fewer than ten
+employees. 
 
-\section{Data discussion}\label{sec:DataDiscussion}
+\section{Discussion}\label{sec:DataDiscussion}
 
 \begin{figure}
 	\centering
 		\includegraphics[width=1\textwidth]{pictures/fig1.png}
-		\caption{Extract of OAD 2020 \cite{oad20} on macro evaluation of security level in the information systems in Italy. The chart shows that more than $ 2/3 $ of the respondents has a good level of cybersecurity.}
+		\caption{Extract of the OAD 2020~\cite{oad20} on the macro-evaluation
+                  of the security level in the IT systems in Italy.
+                  The chart shows that more than two thirds of the respondents
+                  judge the level of cybersecurity of their IT systems as good.}
 		\label{fig:1}
 \end{figure}
 
-The data collected in the OAD 2020 showed at a high level for the most part a good perception by the respondents of their IT security (Fig.~\ref{fig:1}).
-This information can be explainable from the fact that:
+The data collected in the OAD 2020 show, in general, that the respondents have, for the most part,
+a good perception of the cybersecurity of their IT systems (Fig.~\ref{fig:1}).
+This information can be explained from the fact that:
  
 \begin{itemize}
-\item About 30\% of respondents are in the ICT sector, therefore the IT Systems already known the cybersecurity culture and can properly react to the cyber attacks, preventing 
-attacks and minimizing risks.
+\item About 30\% of respondents are in the ICT sector, therefore their IT systems
+  are managed with some cybersecurity literacy and can properly react to cyberattacks, preventing 
+  them or minimizing their effects.
 
-\item In general, cybercriminals do not waste time in attacks targeting small businesses, to obtain only a marginal profit, 
-with the risk of being caught by the police.  As confirmed by trends of Fig.~\ref{fig:3}, the attackers try to hit the big structures,
- because with these it is more probable the realization of gains, even if illegal.
+\item In general, cybercriminals do not waste time and resources to attack small businesses,
+  where they can only obtain a marginal profit and still
+  take the risk of being caught by the police.  As confirmed by the trends shown
+  in Fig.~\ref{fig:3}, attackers target the larger companies most,
+  because the illegal gain is more interesting in that case.
 \end{itemize}
 
 \begin{figure}
-	\centering
-		\includegraphics[width=1\textwidth]{pictures/fig2.png}
-		\caption{Trend comparison of the relived attacks from the beginning of the OAD survey in 2008~\cite{oad20}. This comparison is only valid as a trend and not from a statistical point 
-of view, due to the fact that the respondents pools year by year are different. The dotted red line shows a wave shape: after a relative pick of attacks, the companies react hardening their cybersecurity, and the following year, normally, 
-the relative pick in \% is lower that the previous one.}
-		\label{fig:2}
+  \centering
+  \includegraphics[width=1\textwidth]{pictures/fig3.png}
+  \caption{Comparison between cyberattacks occurred in 2019 and in the first quarter of 2020,
+    wrt.\ to the organization dimension~\cite{oad20}. The dotted line links
+    the unreported attacks and shows that they decrease while moving from tiny to big organizations,
+    in terms of employees.}
+  \label{fig:3}
 \end{figure}
 
-Analyzing the trends about cyber attaks since 2007 to 2015, the chart in Fig.~\ref{fig:2} reveals in average that about 40\% of the respondents that relived cyber attacks 
-(first red line). Since 2015 up to day, this average trend increased to 45\% of the respondents (second red line). 
-In 2018 OAD reached the pick of relived attacks, and  for the first time  the \% of relived attacks is higher that percentage of the not relived. After the biggest pick 
-in 2018, 2019 has a lower percentage, and also for the first quarter 2020. Only with the 2021 survey we will discover the percentages for the whole 2020. 
-This view over several years of the interviewees does not show significant changes especially compared to the pandemic period but only a slight increase in cyber attacks 
-in recent years not necessarily attributable to the pandemic crisis.
 
 \begin{figure}
-	\centering
-		\includegraphics[width=1\textwidth]{pictures/fig3.png}
-		\caption{Comparison between cyber attacks relived in 2019 and first quarter of 2020 for the organization dimension~\cite{oad20}. The black dotted line in the figure shows 
-the “not” relieved attacks, and points out how it decrease from the tiny to the big organizations, in terms of employees. }
-		\label{fig:3}
+  \centering
+  \includegraphics[width=1\textwidth]{pictures/fig2.png}
+  \caption{Trend of the reported attacks from the beginning of the OAD survey
+    in 2008~\cite{oad20}. This comparison is only valid as a trend and not as a statistical
+    measure, since the respondents are different from year to year. The dotted red line shows
+    successive waves: after a relative pick of attacks, companies react and strengthen
+    their cybersecurity measures, so that, the following year, the trend dicreases.}
+  \label{fig:2}
 \end{figure}
 
+The chart in Fig.~\ref{fig:2} analyzes the trend of cyberattaks.
+The figure shows that, from 2007 to 2015, in average, about 40\% of the respondents
+reported cyberattacks (leftmost full red line). Since 2015, the trend increased to 45\%
+of the respondents (rightmost full red line). 
+In 2018, OAD reached the pick of reported attacks and, for the first time, the percent of
+reported attacks became larger than that percent of companies that did not report any attack.
+After the pick 
+in 2018, year 2019 has a lower figure and the same occurs in the first quarter 2020.
+The trend for full 2020 will be discovered with the currently ongoing OAD survey.
+This view, over several years, does not show significant changes, not even inside
+the pandemic period, but shows only a slight increase in cyberattacks 
+in the recent years, not necessarily attributable to the pandemic crisis.
 
-As already highlighted above, the comparison between the whole 2019 and the first quarter 2020 in Fig.~\ref{fig:3} maintains the same logical trend. The only meaningful difference is for the frequent attacks relieved by the very
-small organizations, up to 10 employees: 0\% in 2019 grows up to 22,2\% (see in Fig.~\ref{fig:3} the red line). Such a strong increase derives by the large utilization of e-baking and 
-e-commerce services, with the related cyber attacks.
+As already highlighted above, the comparison between the whole 2019 and the first quarter 2020
+in Fig.~\ref{fig:3} maintains the same logical trend. The only meaningful difference
+is in the number of attacks reported by the smallest
+organizations (up to ten employees): they were 0\% in 2019 and grwo to
+22,2\% at the beginning of 2020 (see the red arrow in Fig.~\ref{fig:3}).
+Such a strong increase follows from the extensive use of e-banking and 
+e-commerce services, with the related cyberattacks.
 
-The impact of pandemic on the cybersecurity in Italy is also highlighted by the data provided by the Postal and Communications Police that shows the situation for the
-critical infrastructures (Table.\ref{tab:table1}), for the financial cyber crimes (Table.\ref{tab:table2}) and for the cyber terrorism (Table.\ref{tab:table3}). 
-Fraudulent transactions in 2019 were blocked for a total value of \euro 21.3 million and \euro 18 million were recovered; in the 1st quarter of 
-2020 fraudulent transactions for \euro 20.2 million were blocked, practically reaching in 4 months what was blocked in the 12 months of the previous year, and \euro 8 million 
-recovered; an indicator of the growth in attacks on financial transactions and services due to the very large use of these online services caused by the mobility blocks imposed 
-by the Covid-19 pandemic.
+The impact of the pandemic on the cybersecurity in Italy is also highlighted by the data
+provided by the postal and communication police, that shows the situation for the
+critical infrastructures (Table~\ref{tab:table1}), for the financial cyber-crimes
+(Table~\ref{tab:table2}) and for the cyber-terrorism (Table~\ref{tab:table3}). 
+Fraudulent transactions in 2019 were blocked for a total value of \euro 21.3 million and \euro 18 million were recovered; in the first quarter of 
+2020, fraudulent transactions for \euro 20.2 million were blocked,
+practically reaching in four months the amount
+blocked in the full twelve months of 2019, and \euro 8 million have been
+recovered. This is an indication of the increase in attacks on financial transactions
+and services due to the very large use of these online services, caused by the mobility reduction
+measures consequent of the Covid-19 pandemic.
 
 \begin{table}[h]
   \begin{center}
-  \resizebox{1.15\textwidth}{!}{
+  \resizebox{1\textwidth}{!}{
 	\begin{tabular}{|r|r|r|r|r|r|}									
-		\hline									
-		Critical structure protection	&	1 Jan - 30 Apr 2020	&	1 Jan - 31 Dec 2019	&	1 Jan - 31 Dec 2018 &	1 Jan - 31 Dec 2017 &	1 Jan - 31 Dec 2016\\
+		\hline
+		\textbf{Critical structure protection}	&	1 Jan - 30 Apr	&	1 Jan - 31 Dec	&	1 Jan - 31 Dec &	1 Jan - 31 Dec &	1 Jan - 31 Dec\\
+                	&	2020	&	2019	&	2018 &	2017 &	2016\\
 		\hline									
 		Relevant attacks	&	282	&	1.181	&	459	&	1.032 & 844	\\
 		Issued alerts	&	24.824	&	82.484	&	80.777	&	31.524 & 6.721	\\
@@ -192,36 +264,37 @@ by the Covid-19 pandemic.
 		People reported	&	0	&	117	&	14	&	1.316 &	1.226	\\
 		Perquisitions	&	n.d.	&	n.d.	&	n.d.	&	73	& 58 \\
 		\hline	
-		Initiated investigations on detected attacks	&	12,05\%	&	13,12\%	&	16,12\%	&	6,98\%	& 8,29\% \\
+		Initiated investigations	&	12,05\%	&	13,12\%	&	16,12\%	&	6,98\%	& 8,29\% \\
 		\hline	
-		People arrested out of	reported &	0\%	&	2,5\%	&	7,14\%	&	0,23\%	&	0,24\%\\						
+		People arrested out ofreported &	0\%	&	2,5\%	&	7,14\%	&	0,23\%	&	0,24\%\\						
 		\hline	
 	\end{tabular}
 	}
     \end{center}
 	
-	\caption{Data of critical structure protection collected by Italian Postal and Communications Police~\cite{oad20}}									
+	\caption{Data of critical structure protection collected by Italian postal and communication police~\cite{oad20}.}									
 	\label{tab:table1}									
 \end{table}	
 
 \begin{table}[h]
   \begin{center}
-  \resizebox{1.15\textwidth}{!}{
+  \resizebox{1\textwidth}{!}{
 	\begin{tabular}{|r|r|r|r|r|r|}									
 		\hline									
-		Financial Cyber Crime	&	1 Jan - 30 Apr 2020	&	1 Jan - 31 Dec 2019	&	1 Jan - 31 Dec 2018 &	1 Jan - 31 Dec 2017 &	1 Jan - 31 Dec 2016\\
+		\textbf{Financial Cyber Crime}	&	1 Jan - 30 Apr	&	1 Jan - 31 Dec	&	1 Jan - 31 Dec &	1 Jan - 31 Dec &	1 Jan - 31 Dec\\
+                	&	2020	&	2019	&	2018 &	2017 &	2016\\
 		\hline									
 		Blocked fraudulent transactions	&	\textbf{\euro 20.200.000,00}	&	\textbf{\euro 21.333.990,00}	&	\euro 38.400.000,00	& \euro 20.839.576,00 & \euro 16.050.812,50 	\\
-		Recovered amounts 	&	\euro 8.700.000,00	&	\euro 18.000.000,00	&	\euro 9.000.000,00	&	\euro 862.000,00 & n.d.	\\
-		People arrested	&	n.d.	&	n.d.	&	n.d.	&	25	& 25\\
-		People reported	&	n.d.	&	n.d.	&	n.d.	&	2.851 & 3.772	\\
+		Recovered amounts 	&	\euro 8.700.000,00	&	\euro 18.000.000,00	&	\euro 9.000.000,00	&	\euro 862.000,00 & n.a.	\\
+		People arrested	&	n.a.	&	n.a.	&	n.a.	&	25	& 25\\
+		People reported	&	n.a.	&	n.a.	&	n.a.	&	2.851 & 3.772	\\
 		\hline	
 		Recovered amounts out of fraud	&	12,05\%	&	13,12\%	&	16,12\%	&	6,98\%	& 8,29\% \\
 		\hline	
 	\end{tabular}
 	}
     \end{center}
-	\caption{Data of critical structure protection collected by Italian Postal and Communications Police~\cite{oad20}}									
+	\caption{Data of critical structure protection collected by Italian postal and communication police~\cite{oad20}.}									
 	\label{tab:table2}									
 \end{table}	
 
@@ -229,10 +302,10 @@ by the Covid-19 pandemic.
   \begin{center}
 	\begin{tabular}{|r|r|r|r|}									
 		\hline									
-		Cyber terrorism	&	1 Jan - 30 Apr 2020	&	1 Jan - 31 Dec 2019	&	1 Jan - 31 Dec 2018\\
+		\textbf{Cyber-terrorism}	&	1 Jan - 30 Apr 2020	&	1 Jan - 31 Dec 2019	&	1 Jan - 31 Dec 2018\\
 		\hline									
 		Monitored web space	&	\euro 11.962	&	\euro 36.377	&	\euro 36.000\\
-		Removed contents 	&	n.d.	&	n.d.	&	250\\
+		Removed contents 	&	n.a.\	&	n.a.\	&	250\\
 		\hline	
 	\end{tabular}
         \end{center}
@@ -240,73 +313,79 @@ by the Covid-19 pandemic.
 	\label{tab:table3}									
 \end{table}	
 
-\section{Cyber attack trends}\label{sec:TypeAttacks}
+\section{Nature of Cyberattacks}\label{sec:TypeAttacks}
 
-In the pandemic period between 2019 and 1st quarter of 2020,  the nature of attacks and their vectors were quite diversified.
-The attacks on IAA that aimed at access control systems are most widespread with 34\% in 2019 and 28.2\% (Fig.~\ref{fig:5}).
+In the pandemic period, between 2019 and the first quarter of 2020, the nature of the attacks and their vectors were quite diversified.
+The attacks on IAA that aimed at access control systems are widespread, since they amount to 28.2\% of the total attacks
+of 2019 and to 34\% of the total attacks in the first quarter of 2020 (Fig.~\ref{fig:5}).
 
 \begin{figure}
-	\centering
-		\includegraphics[width=1\textwidth]{pictures/fig5.png}
-		\caption{Diffusion of digital attacks on respondents' computer systems based on the type of attack between 2019 - 1st quoter 2020 (multiple answers) \cite{oad20}}
-		\label{fig:5}
+  \centering
+  \includegraphics[width=1\textwidth]{pictures/fig5.png}
+  \caption{Widespread of the digital attacks on the respondents' computer systems, classified wrt.\ the type of attack, between 2019 and the first quarter of 2020 (multiple answers)~\cite{oad20}.}
+  \label{fig:5}
 \end{figure}
 
-As diffusion among the respondents, the other 14 types of attacks follow, decreasing by a few percentage points among them, whose characteristics and impacts are detailed in the related 
-paragraphs of the OAD 2020 report. Regarding attack vectors and techniques, all the seven attacks families considered in the 2020 questionnaire are widely used in the various 
-types of attacks, some times even simultaneously, as shown in Fig.~\ref{fig:6}. The trend of Fig.~\ref{fig:6} is also in line with for the most part the european threads recorded in ~\cite{enisa20} by European Network and Information Security Agency (ENISA). 
-The most widespread one, as an average on the various attacks detected by the respondents’ pool, is the use of toolkits (rootkits, meta-exploits, etc.) for the identification and exploitation of vulnerabilities
-on the target system of the attack, with a 38.8\%, followed by the well-known malicious and unauthorized collection of information (social engineering, phishing, etc.) with 34.6\% 
-and the use of malicious code and scripts with 34.3\%. The other considered technologies decrease with a few percentage points of difference between them. The impacts of the most 
-critical attacks are analyzed for each attack type, as well as their possible motivations and the recovery times required by the most critical ones.
-In the 2020 OAD survey, all these attacks’ characteristics vary for each type of attack, and the emerged results are described in the specific paragraphs dedicated to each attack 
-type. At overall it emerges that:
+The other 14 types of attacks follow, decreasing by a few percent points between them, whose characteristics and impacts are detailed in the related 
+paragraphs of the OAD 2020 report. Regarding attack vectors and techniques, all the seven attack families considered in the 2020 questionnaire are widely used in the various 
+types of attacks, sometime even simultaneously, as shown in Fig.~\ref{fig:6}. The trend in Fig.~\ref{fig:6} is also in line with most European reports, such as
+that of the European Network and Information Security Agency (ENISA)~\cite{enisa20}. 
+The most widespread one, in the average of the various attacks detected by the respondents, is the use of toolkits (rootkits, meta-exploits, etc.)
+for the identification and exploitation of vulnerabilities
+on the target system, with 38.8\%, followed by the well-known malicious and unauthorized collection of information (social engineering, phishing, etc.), with 34.6\%,
+and the use of malicious code and scripts, with 34.3\%. The other considered techniques decrease, with a few percent points between them. The impacts of the most 
+critical attacks are analyzed, for each attack type, as well as their possible motivations and the recovery time required by the most critical ones.
+In the 2020 OAD survey, all these attack characteristics vary for each type of attack, and the emerged results are described in the specific paragraphs dedicated to each attack 
+type. In the overall, it emerges that:
 \begin{itemize}
-\item the impacts declared by the respondents are balanced between those irrelevant and/or easily resolvable with recovery in short time and at limited costs, and those very 
-critical, which require expensive and long recovery actions, and that, in some cases, can cause business and customer loses; these two very different impact cases depend mainly 
+\item the impacts declared by the respondents are balanced between those irrelevant and/or easily resolvable with a quick recovery and at limited costs, and those very 
+critical, that require expensive and long recovery actions and that, in some cases, can cause business and customer losses. These two very different impact cases depend mainly 
 on the security measures in place;
-
-\item the motivations of the cyber attacks are mainly of an economic nature, therefore done for fraud and blackmail: the widespread diffusion of ransomware in Italy is a clear 
+\item the motivations of the cyberattacks are mainly economic, such as fraud and blackmailing: the widespread diffusion of ransomware in Italy is a clear 
 confirmation of these motivations.
 \end{itemize}
 
 \begin{figure}
-	\centering
-		\includegraphics[width=0.90\textwidth]{pictures/fig6.png}
-		\caption{Average diffusion (percentage) of the attack techniques detected in the most serious attacks between 2019 - 1st quoter 2020 (multiple answers) \cite{oad20}}
-		\label{fig:6}
+  \centering
+  \includegraphics[width=0.90\textwidth]{pictures/fig6.png}
+  \caption{Average diffusion (in percent) of the attack techniques detected in the most serious attacks between 2019 and the first quarter of 2020 (multiple answers)~\cite{oad20}.}
+  \label{fig:6}
 \end{figure}
 
-As pointed out in Fig.~\ref{fig:1}, the Informatics Systems considered in the 2020 survey and their cybersecurity  are in the medium-high range and the collected information show a relevant 
-improvement in both technical and organizational measures, in comparison to the previous surveys. Few of the considered Italian Informatics Systems are based on Data Centers in 
-Italy, most of the respondents’ companies have medium-small Informatic Systems partly on premise and partly outsourced, with an increasing use of cloud services.
-The high number of attacks detected in 2018, and the privacy obligations, related to General Data Protection Regulation (GDPR), have certainly contributed to strengthening cybersecurity measures, and a further improvement 
-comes from the growing use of cloud services, where usually there are high standard security measures. Organizational measures for cybersecurity, historically lacking and neglected
-in Italy, have improved in terms of defining roles and separation of duties, of organizational policies and procedures, and of incidents management. These measures often are lacking
-in small organizations, and in general the cybersecurity awareness and competence are low, and mainly at the top level of the public and private organizations. In Italy, there is 
-still a long way to go in terms of cybersecurity continual training and awareness. A formal and bureaucratic approach for the organizational procedures is still prevalent, which 
-once defined, often do not find a possible concrete applicability, periodic updates and operational tests: an emblematic example is represented by the Disaster Recovery plans for 
-which, several times, the required alternative ICT resources to be used are not forecasted and allocated and there also not provided periodic exercises and simulations of the 
-possible disasters. Cybersecurity management tools still have limited diffusion among the 2020 OAD respondents, in particular the most advanced ones based on artificial intelligence
-techniques. Although the use of IoT \cite{JK21}, industrial automation, robotics systems \cite{SGLMDXHKCZT21}, and systems based on blockchain technologies \cite{RMFF21} are expanding and can allow to combat the Covid-19 pandemic, in 
-the OAD 2020, we can find only a low number of respondents involved, which also derives from the limited percentage of their product sectors that should be the more interested in these systems: the manufacturing sectors, the logistics, the research and 
-development centers and labs, the Local Public Administrations for territorial control, and so on. For these topics, the data that emerged from the survey are considered only as 
-specific cases that contribute to the general values on the cyberattacks, but which cannot be still considered of reference at the Italian level.
+As pointed out in Fig.~\ref{fig:1}, the IT systems considered in the 2020 survey and their cybersecurity are in the medium to high range and the collected information shows a relevant 
+improvement in both technical and organizational measures, in comparison to the previous surveys. Few of the considered Italian IT systems are based on data centers in 
+Italy: most of the respondents' companies have medium to small IT systems partly on premise and partly outsourced, with an increasing use of cloud services.
+The high number of attacks detected in 2018, and the privacy obligations related to the European
+General Data Protection Regulation (GDPR), have certainly contributed to strengthening cybersecurity measures, and a further improvement 
+comes from the growing use of cloud services, where high standard security measures are in place, usually. Organizational measures for cybersecurity, historically missing and neglected
+in Italy, have improved in terms of defition of roles and separation of duties, of organizational policies and procedures, and of incident management. These measures often are missing
+in small organizations, and in general the cybersecurity awareness and competence are low, and mainly concentrated at the top level of the public and private organizations. In Italy, there is 
+still a long way to go in terms of cybersecurity continued training and awareness. A formal and bureaucratic approach to the organizational procedures is still prevalent. Once defined,
+such procedures often do not find concrete application and misses periodic updates and operational tests. A significant example is the disaster recovery plans, for 
+which, typically, the required alternative IT resources are neither forecast nor allocated. Periodic exercises and simulations of the 
+possible disasters are not implemented. Cybersecurity management tools have limited diffusion yet, among the 2020 OAD respondents. This is particularly true for
+the most advanced ones, based on artificial intelligence.
+Although the use of IoT~\cite{JK21}, industrial automation, robotics systems~\cite{SGLMDXHKCZT21} and systems based on blockchain technology~\cite{RMFF21}
+are expanding and can contribute to fight the Covid-19 pandemic.
+In the OAD 2020 report, one finds only a few respondents involved in such technologies, which also derives from the limited portion
+of their economic sector, interested in such systems: the manufacturing sectors, the logistics, the research and 
+development centers and labs, the local public administration for territorial control, and so on.
+%For these topics, the data that emerged from the survey are considered only as 
+%specific cases that contribute to the general values on the cyberattacks, but which cannot be still considered of reference at the Italian level.
 
 \section{Conclusion}\label{sec:Conclusion}
 
-The OAD 2020 survey highlights a situation of cyberattacks of various types but all technically of an high complexity and sophistication, with a slightly increasing 
-spread  in Italy  compared to the trend that emerged in the twelve years of OAD surveys, but lower than the peak of 2018. Despite the proliferation of cyberattacks to varying 
-degrees related to the Covid-19 pandemic, in the first four months of 2020 the general spread of attacks is at similar values to those of 2019: to be verified with the next OAD 2021
-if there will be changes to this trend. The Italian reality, made up of a very large number of small and tiny organizations, does not make our country one of the most attractive for cybercriminals, but cyber warfare
-and massive attacks represent a growing and serious risk, as has already happened in part with the widespread of ransomware on computer systems whit a lack of or  with low 
-cybersecurity  basic measures. OAD 2020 notes a clear improvement and strengthening of digital security measures, both technical and organizational, even if the most modern 
-prevention, protection and management systems that use artificial intelligence techniques are still embryonic  in the respondents' basin. The defense measures and techniques 
-in use chase the increasingly sophisticated and smart evolution of attacks, but almost always late. The high density of vulnerabilities 
-requires different approaches and new logics, with the aim of making all ICT systems interconnectable to the Internet intrinsically safe, by default and by design. But we are 
-still a long way from this goal, and in order to decisively improve the concrete fight against continuous attacks and cybercrime, it is currently necessary to increase 
-cybersecurity’ awareness and skills at all levels, an effective collaboration between the police at world level, and primarily a real and large usage of the professional ethics
- both of those involved (supply side) and both of those who decide (demand side) on cybersecurity.
+The OAD 2020 survey highlights the presence of cyberattacks of various types in Italy, all technically of an high complexity and sophistication, with a slight increase 
+compared to the trend that emerged in the twelve years of the previous OAD surveys, but still below the pick of 2018. Despite the proliferation of cyberattacks
+related to the Covid-19 pandemic, in the first four months of 2020 the widespread of attacks is at a level similar to that of 2019. This will be better verified
+with the next OAD 2021. The Italian reality, made up of a very large number of small and tiny organizations, does not make our country very attractive to cybercriminals, but cyber-warfare
+and massive attacks represent a growing and serious risk, as has already occurred with the widespread of ransomware on computer systems with no or low
+measures of cybersecurity. The OAD 2020 shows a clear improvement and strengthening of digital security measures, both technical and organizational, even if the most modern 
+prevention, protection and management systems that use artificial intelligence techniques are still in their infancy among the respondents. The defense measures and techniques 
+in use fight the increasingly sophisticated and smart evolution of attacks, but often too late. The high density of vulnerabilities 
+requires different approaches, aiming at making all IT systems interconnected to the Internet and safe, by default and by design. But we are 
+still a long way from this goal. In order to improve the actual fight against continuous attacks and cybercrime, it is currently necessary to increase 
+awareness on cybersecurity and skills at all levels. It is also paramount to support an effective collaboration between police bodies at the international level.
 
 \bibliographystyle{plain}
 \bibliography{biblio}
