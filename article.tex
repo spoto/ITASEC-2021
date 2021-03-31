@@ -116,7 +116,7 @@ In particular, the security measures considered in the 2020 questionnaire were s
 in \emph{technical}, \emph{organizational}, \emph{managerial} and \emph{governamental}, as follow:
 
 \begin{enumerate}
-\small
+\tiny
 	\item \emph{Technical measures}
 	\begin{itemize}
 		\item Overall architecture of the digital security measures, integrated with the entire IT system architecture
@@ -219,14 +219,14 @@ This information can be explained from the fact that:
 \item In general, cybercriminals do not waste time and resources to attack small businesses,
   where they can only obtain a marginal profit and still
   take the risk of being caught by the police.  As confirmed by the trends shown
-  in Fig.~\ref{fig:3}, attackers target the larger companies most,
+  in Fig.~\ref{fig:3} and Fig.~\ref{fig:4}, attackers target the larger companies most,
   because the illegal gain is more interesting in that case.
 \end{itemize}
 
 
 \begin{figure}
   \centering
-  \includegraphics[width=1\textwidth]{pictures/fig2.png}
+  \includegraphics[width=0.9\textwidth]{pictures/fig2.png}
   \caption{Trend of the reported attacks from the beginning of the OAD survey
     in 2008~\cite{oad20}. This comparison is only valid as a trend and not as a statistical
     measure, since the respondents are different from year to year. The dotted red line shows
@@ -270,11 +270,72 @@ organizations (up to ten employees): they were 0\% in 2019 and grow up to
 Such a strong increase follows from the extensive use of e-banking and 
 e-commerce services, with the related cyberattacks.
 
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.46]{pictures/fig4.png}
+	\end{center}
+  \caption{Trend of the reported attacks wrt. to the organizations' turnover in 2019.}
+  \label{fig:4}
+\end{figure}
+
+Regarding the geographical distribution of attacks, Table.~\ref{tab:table4} shows
+that occasional and infrequent attacks are evenly distributed throughout the territory in 2019,
+with systematic attacks focused on northern Italy (where the companies with the highest turnover are present). 
+While, Table.~\ref{tab:table5} shows that already in the first months of 2020 there were several attacks.
+
+\begin{table}[ht]
+  \begin{center}
+  \resizebox{1\textwidth}{!}{
+	\begin{tabular}{|l|r|r|r|}									
+		\hline
+		\textbf{Geographic area} &	Occasional cyber attacks	&	Frequent and repeated cyber attacks & Never detected cyber attacks \\
+		& (few dozen in the year)	& (hundreds or more in the year) & \\
+		\hline									
+		Northern Italy	&	76,3\%	&	18,0\%	&	5,7\% \\
+		Central Italy	&	46,5\%	&	0,0\%	&	53,5\%	\\
+		Southern Italy and islands	&	80,8\%	&	0,0\% &	19,2\% \\
+		Throughout Italy &	100,0\%	&	0,0\% &	0,0\% \\
+		Throughout Italy and Europe &	58,8\%	&	0,0\%	&	41,2\%	\\
+		Throughout Italy and abroad	(also outside Europe) &	100,0\%	&	0,0\%	&	0,0\% \\	
+		\hline	
+	\end{tabular}
+  }
+    \end{center}
+	
+	\caption{Distribution of digital attacks (detected by the respondents) wrt. to geographic area in 2019. The percentages of central Italy are 
+	very different from the others because the organizations responding to that geographical area were numerically lower than the rest 
+	of the survey participant (Fig.\ref{fig:8}).}									
+	\label{tab:table4}									
+\end{table}
+
+\begin{table}[ht]
+  \begin{center}
+  \resizebox{1\textwidth}{!}{
+	\begin{tabular}{|l|r|r|r|}									
+		\hline
+		\textbf{Geographic area} &	Occasional cyber attacks	&	Frequent and repeated cyber attacks & Never detected cyber attacks \\
+		& (few dozen)	&  (hundreds or more) & \\
+		\hline									
+		Northern Italy	&	5,8\%	&	6,3\%	&	87,9\% \\
+		Central Italy	&	0,0\%	&	0,0\%	&	100,0\%	\\
+		Southern Italy and islands	&	0,0\%	&	0,0\% &	100,0\% \\
+		Throughout Italy &	30,3\%	&	0,0\%	&	69,7\%	\\
+		Throughout Italy and Europe &	0,0\%	&	0,0\%	&	100,0\%	\\
+		Throughout Italy and abroad (also outside Europe)	&	28,8\%	&	0,0\%	&	71,2\%	\\					
+		\hline		
+	\end{tabular}
+  }
+    \end{center}
+	
+	\caption{Distribution of digital attacks (detected by the respondents) wrt. to geographic area in 1Q-2020.}									
+	\label{tab:table5}									
+\end{table}
+
 The impact of the pandemic on the cybersecurity in Italy is also highlighted by the data
 provided by the Italian Postal and Telecommunication Police, that shows the situation for the
 critical infrastructures (Table~\ref{tab:table1}), for the financial cyber-crimes
 (Table~\ref{tab:table2}) and for the cyber-terrorism (Table~\ref{tab:table3}). 
-Fraudulent transactions in 2019 were blocked for a total value of \euro 21.3 million and \euro 18 million were recovered; in the first quarter of 
+Fraudulent transactions all Italyin 2019 were blocked for a total value of \euro 21.3 million and \euro 18 million were recovered; in the first quarter of 
 2020, fraudulent transactions for \euro 20.2 million were blocked,
 practically reaching in four months the amount
 blocked in the full twelve months of 2019, and \euro 8 million have been
@@ -282,7 +343,7 @@ recovered. This is an indication of the increase in attacks on financial transac
 and services due to the very large use of these online services, caused by the mobility reduction
 measures consequent of the Covid-19 pandemic.
 
-\begin{table}[h]
+\begin{table}[ht]
   \begin{center}
   \resizebox{1\textwidth}{!}{
 	\begin{tabular}{|r|r|r|r|r|r|}									
@@ -309,7 +370,7 @@ measures consequent of the Covid-19 pandemic.
 	\label{tab:table1}									
 \end{table}	
 
-\begin{table}[h]
+\begin{table}[ht]
   \begin{center}
   \resizebox{1\textwidth}{!}{
 	\begin{tabular}{|r|r|r|r|r|r|}									
@@ -331,7 +392,7 @@ measures consequent of the Covid-19 pandemic.
 	\label{tab:table2}									
 \end{table}	
 
-\begin{table}[h]
+\begin{table}[ht]
   \begin{center}
 	\begin{tabular}{|r|r|r|r|}									
 		\hline									
@@ -380,7 +441,7 @@ confirmation of these motivations.
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.90\textwidth]{pictures/fig6.png}
+  \includegraphics[width=0.85\textwidth]{pictures/fig6.png}
   \caption{Average diffusion (in percent) of the attack techniques detected in the most serious attacks between 2019 and the first quarter of 2020 (multiple answers)~\cite{oad20}.}
   \label{fig:6}
 \end{figure}
